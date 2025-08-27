@@ -2,15 +2,14 @@ import HomePage from './Component/Homepage';
 import "./Component/stylee.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { BrowserRouter as Router, Routes, Route, createHashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, createHashRouter, BrowserRouter } from 'react-router-dom';
 import Aboutus from './Component/About_us';
 import Courses from './Component/Courses';
 import Contact from './Component/Contact';
 function App() {
-  const routes= createHashRouter()
   return (
     <>
-     
+     <BrowserRouter>
     <Router>
       <Routes>
         
@@ -21,7 +20,7 @@ function App() {
       </Routes>
     
     </Router>
-      
+      </BrowserRouter>
       </>
   );
 }
